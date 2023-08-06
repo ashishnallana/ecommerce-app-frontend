@@ -63,7 +63,7 @@ function NewProduct() {
   //   * function to add the product to the db
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("${process.env.REACT_APP_BASE_URL}/NewProduct", {
+    fetch(`${process.env.REACT_APP_BASE_URL}/NewProduct`, {
       method: "POST",
       body: JSON.stringify({
         uid: user.uid,
@@ -83,7 +83,7 @@ function NewProduct() {
         // * add images if they exist
         if (images) {
           console.log("into fetching");
-          fetch("${process.env.REACT_APP_BASE_URL}/addImages", {
+          fetch(`${process.env.REACT_APP_BASE_URL}/addImages`, {
             method: "POST",
             body: JSON.stringify({
               uid: user.uid,

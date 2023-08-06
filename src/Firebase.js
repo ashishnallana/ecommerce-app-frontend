@@ -32,7 +32,7 @@ const db = getFirestore(app);
 const googleProvider = new GoogleAuthProvider();
 
 const registerUserToMongo = async (name, email, uid, displayPicture) => {
-  await fetch("${process.env.REACT_APP_BASE_URL}/register", {
+  await fetch(`${process.env.REACT_APP_BASE_URL}/register`, {
     method: "POST",
     body: JSON.stringify({
       name,

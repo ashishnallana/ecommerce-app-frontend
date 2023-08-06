@@ -16,7 +16,7 @@ function Login() {
 
   return (
     <div className="flex h-[calc(100vh-80px)] w-screen justify-center items-center">
-      <div className="flex flex-col space-y-3">
+      <div className="flex flex-col space-y-3 bg-white p-10 rounded">
         <input
           type="text"
           className="outline-none bg-[white] text-black p-3 rounded border-2 border-gray-700 font-semibold"
@@ -49,11 +49,11 @@ function Login() {
           />
         </button>
         <div className="flex flex-col items-center">
-          <div>
+          {/* <div>
             <Link to="/reset" className="underline text-blue-500">
               Forgot Password
             </Link>
-          </div>
+          </div> */}
           <div>
             Don't have an account?{" "}
             <Link to="/register" className="underline text-blue-500">

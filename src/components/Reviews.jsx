@@ -35,7 +35,7 @@ function Reviews({ details }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("${process.env.REACT_APP_BASE_URL}/AddReview", {
+    fetch(`${process.env.REACT_APP_BASE_URL}/AddReview`, {
       method: "POST",
       body: JSON.stringify({
         uid: user.uid,
