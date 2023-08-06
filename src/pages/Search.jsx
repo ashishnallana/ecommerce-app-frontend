@@ -39,7 +39,7 @@ function Search() {
       {!data ? (
         <Loader />
       ) : (
-        <div>
+        <div className="flex flex-wrap max-[670px]:justify-center min-[650px]">
           {data.products.map((e, i) => (
             <Product userType={"buyer"} details={e} key={i} />
           ))}
